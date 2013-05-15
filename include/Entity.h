@@ -6,9 +6,11 @@ class Entity {
         VectorProvidingComponent *precisePosition;
         MutableVectorContainer *precisePositionContainer;
     public:
-        bool hasPrecisePositionComponent();
-        VectorProvidingComponent *getPrecisePositionComponent();
+        Entity();
 
-        bool hasPrecisePositionContainer();
-        MutableVectorContainer *getPrecisePositionContainer();
-}
+        const bool hasPrecisePositionComponent();
+        const VectorProvidingComponent *getPrecisePositionComponent();
+
+        const bool hasPrecisePositionContainer();
+        const MutableVectorContainer *getPrecisePositionContainer();
+};

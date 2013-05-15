@@ -4,7 +4,7 @@ RM=rm -f
 CPPFLAGS=-g -Iinclude
 LDFLAGS=-g -Iinclude
 
-SRCS=components/*.cpp
+SRCS=Entity.cpp components/*.cpp
 OBJS=$(subst .cc,.o,$(SRCS))
 
 all: island
